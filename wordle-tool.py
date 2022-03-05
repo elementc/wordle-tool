@@ -2,8 +2,9 @@
 import sys
 import os
 
-if len(sys.argv) not in [2,3,4]:
-    print("""Usage: wordle-tool.py dot_pattern [burned_letters] [misplaced_letters]
+if len(sys.argv) not in [2, 3, 4]:
+    print(
+        """Usage: wordle-tool.py dot_pattern [burned_letters] [misplaced_letters]
 For instance, if you know it has _B_D_ and definitely doesn't have any of Y, F, or G, in it, but there's an O you haven't found yet, you would use it like:
 
     ./wordle-tool.py .b.d. yfg o
@@ -13,7 +14,8 @@ For instance, if you know it has _B_D_ and definitely doesn't have any of Y, F, 
     solutions:
     abode
 
-""")
+"""
+    )
     exit(1)
 
 dot_pattern = sys.argv[1]
